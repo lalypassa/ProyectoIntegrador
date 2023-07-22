@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+ 
+#nav-item{background-color: #FC7300;
+
+ }
+
+body{
+    padding: 12px;
+    background-color: #EFF5F5;
+    text-align: justify;
+    margin: 5px;
+}
+
+h1{
+    font-family: 'Belanosima', sans-serif;
+    text-decoration: underline;
+}
+
+p{ font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+div{
+       border-width: 1px;
+    border-color: #FC7300;
+    border-radius: 10px;}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+.ImagenQuienesSomos{
+    margin-right: 20px;
+    border-radius: 15px;
+    margin-top: 2px;
+}
+.ImagenPorQueElegirnos{
+    margin-top: 55px;
+    margin-left:20px ;
+    border-radius: 15px ;
+}
+
+#TituloNoticias{
+    background-color: #FC7300;
+    margin-top: 20px;
+}
+
+#ContenedorNoti{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.ImagenNoticias{
+    margin-right: 20px;
+    border-radius: 15px;
+    margin-top: 2px;
+
+}
+
+
+
+footer{
+    display: inline-flexbox;
+    background-color: #FC7300;
+}
+.grupo-2{
+    text-align: center;
+}
+
+#TituloForm{
+    text-align: center;
+}
+.header {
+    position: center;
+    color: #1F8A70;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 50px;
+    text-align: center;
+    color: #ff36a5;
+}
+.form-horizontal{
+    background-color: #FC7300;
+    }
+    .form-group{
+        background-color: ;
+    }
