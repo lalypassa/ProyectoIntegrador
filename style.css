@@ -1,92 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
  
-#nav-item{background-color: #FC7300;
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 
- }
+html{
+    height: 100%;
+}
+
+#BotonEscribinos{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.form-group{
+    background-color: #1f8a70;
+    position: center;
+}
 
 body{
+    font-family:'Poppins', sans-serif ;
+    font-size: 1.2rem;
     padding: 12px;
     background-color: #EFF5F5;
     text-align: justify;
     margin: 5px;
+    min-height: 100%;
+}
+p{
+    font-size: 16px;
 }
 
-h1{
-    font-family: 'Belanosima', sans-serif;
-    text-decoration: underline;
-}
-
-p{ font-family: 'Poppins', sans-serif;
-    font-size: large;
-}
-div{
-       border-width: 1px;
-    border-color: #FC7300;
-    border-radius: 10px;}
-.contenedor{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    }
-.ImagenQuienesSomos{
-    margin-right: 20px;
-    border-radius: 15px;
-    margin-top: 2px;
-}
-.ImagenPorQueElegirnos{
-    margin-top: 55px;
-    margin-left:20px ;
-    border-radius: 15px ;
-}
-
-#TituloNoticias{
-    background-color: #FC7300;
-    margin-top: 20px;
-}
-
-#ContenedorNoti{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.ImagenNoticias{
-    margin-right: 20px;
-    border-radius: 15px;
-    margin-top: 2px;
-
-}
-
-
-
-footer{
-    display: inline-flexbox;
-    background-color: #FC7300;
-}
-.grupo-2{
-    text-align: center;
-}
-
-#TituloForm{
-    text-align: center;
-}
-.header {
-    position: center;
-    color: #1F8A70;
-    font-size: 27px;
+.grid-container >*{
+    box-shadow: -1px 1px 7px 0px #181823;
+    border-radius: 4px;
     padding: 10px;
+    text-align: center;
 }
 
-.bigicon {
-    font-size: 50px;
-    text-align: center;
-    color: #ff36a5;
+.header{
+    grid-area: header;
 }
-.form-horizontal{
+
+.nav{
+    grid-area: navbar;
+   }
+
+.main{
+    font-size: 18px;
+    margin-top: -110px;
+    grid-area: main;
+    }
+
+.card-title{
+    
     background-color: #FC7300;
+    font-size: 24px;
+}
+.card-text{
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+.grid-container{
+    display: grid;
+    gap:10px;
+    grid-template: 
+    "nav"
+    "header" 100px
+    "main" auto
+    "footer" 100px
+}
+
+.contenedor{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FC7300;
+    border-radius: 10px;
+  
+}
+.contenedor h1{
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.contenedor p{
+    text-indent:10px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 15px;
+    letter-spacing: 1px;
     }
-    .form-group{
-        background-color: ;
+#ImagenQuienesSomos{
+    border-radius: 10%;
+    width: 200px;
+    height: 230px;
+    margin: 10px;
+    margin-top: -10px;
+    float: left
+}
+#ImagenPorQueElegirnos{
+    border-radius: 10%;
+    width: 400px;
+    height: 350px;
+    margin: 10px;
+    margin-top: -10px;
+    float: right;
+}
+ #UltimasNoticias{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FC7300;
+    border-radius: 10px;
+}
+
+#UltimasNoticias h1{
+background-color: #FC7300;
+}
+
+#UltimasNoticias p {
+    text-indent:10px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 2px;
+    letter-spacing: 1px;
+
+}
+
+#ImagenNoticias{
+margin-top: -10px;
+margin-right: 15px; 
+float:left
+}
+
+.footer{
+    margin-top: 15px;
+    background-color: #FC7300;
+}
+
+.Form-container{
+    background-color: #FC7300;
+}
+.form-group{
+    background-color: #1f8a70;
+}
+@media (min-width:600px) {
+    .grid-container {
+        grid-template:
+         "nav"
+         "header header" 100px
+         "main main" auto
+         "footer footer" 100px/
+         200px auto
+
     }
+}
+   
+@media (min-width:900px) {
+    .grid-container {
+        grid-template:
+        "header header"100px
+        "nav nav"auto
+         "main main" auto
+         "footer footer" auto
+         200px auto
+
+    }
+}
+
+
+
+
+
+
+
+

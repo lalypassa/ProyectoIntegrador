@@ -8,51 +8,127 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f30847ccf2.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
-</head>
-<body>
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href=#QuienesSomos>Quiénes somos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href=#PorQueElegirnos>Por qué elegirnos</a>
-    </li>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href=#PropuestaEducativa tabindex="-1" aria-disabled="true">Propuesta educativa</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href=#UltimasNoticias tabindex="-1" aria-disabled="true">Últimas noticias </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Formulario.html" tabindex="-1" aria-disabled="true"> Escribinos </a>
-      </li>
-  </ul>
-</div>
-      </nav>
-      <div id="Portada">
-      <img img src="Imagenes/portadaUntreSchool.jpg" class="img-fluid" alt="Portada UnTrefSchool">
-      </div>
+    </head>
+    <header>
+<body class="grid-container">
 
-      <section id="QuienesSomos">
-        <div class="contenedor">
-          <img class="ImagenQuienesSomos" height="290" img width="350" src="Imagenes/QuienesSomos.jpg" class="img-thumbnail" alt="Maestra en clase de arte con alumna">
-          <div id="TextoQuienesSomos">
-          <h1>Quienes Somos</h1>
-          <p> No hay dudas de que la escuela es una de las fases más importantes en nuestro aprendizaje, no sólo nos provee de conocimiento académico, sino que también nos forja como seres humanos. En la escuela aprendemos a convivir con los demás, aceptar las diferencias, aprendemos a jugar y a ser compañeros. Este aprendizaje es parte de todo lo que nos forma y moldea como personas. Lo aprendido en la escuela nos acompañará toda la vida. UntrefSchool es eso, preparar a las infancias con un excelente nivel académico pero también preparar seres humanos para el mundo real, sin dejar el lado todo lo que nos define como personas. No somos nuevos en esto, pero nos actualizamos constantemente en nuestros programas de estudio, incorporando nuevas tecnologías, para preparar a los jóvenes del mañana, así como también nuestro equipo docente y directivo recibe capacitaciones constantes para hacer cada día mejor el paso de los niños por nuestro establecimiento <br> Te invitamos a participar de nuestras charlas informativas para que nos puedas conocer! Llenando el formulario de contacto podemos tener tu contacto para informarte sobre las visitas a la escuela y todas las actividades de UntrefSchool.</p>
-          </div>
+<button class="btn btn-primary" id="BotonEscribinos" data-bs-toggle="modal" data-bs-target="#formulario">
+  ESCRIBINOS
+</button>
+
+<div class="modal fade" id="formulario">
+<div class="modal-dialog">
+  <div class="modal-content">
+
+    <div class="modal-header">
+    <button class="btn-close"data-bs-dismiss="modal"> </button>
+    </div>
+
+    <div class="modal-body">
+      <div class="Form-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center header">CONTACTANOS</legend>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="email" name="email" type="text" placeholder="Correo electrónico" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Dejanos tu comentario y te responderemos a la brevedad!" rows="7"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">ENVIAR</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
-         
-        <section id="PorQueElegirnos">
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link"  href= #QuienesSomos >Quiénes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href= #PorQueElegirnos >Por qué elegirnos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href= #PropuestaEducativa >Propuesta Educativa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href= #UltimasNoticias >Últimas noticias</a>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div id="Portada">
+        <img img src="Imagenes/portadaUntreSchool.jpg" class="img-fluid" alt="Portada UnTrefSchool">
+        </div>
+      </header>
+        <main class="main">
+          <section id="QuienesSomos">
           <div class="contenedor">
-            <div id="TextoPorQueElegirnos">
+          <h1>Quiénes somos</h1>
+            <img id="ImagenQuienesSomos" height="150" img width="200" src ="Imagenes/QuienesSomos.jpg" class="img-thumbnail" alt="Niño en la huerta">
+            <p> No hay dudas de que la escuela es una de las fases más importantes en nuestro aprendizaje, no sólo nos provee de conocimiento académico, sino que también nos forja como seres humanos. En la escuela aprendemos a convivir con los demás, aceptar las diferencias, aprendemos a jugar y a ser compañeros. Este aprendizaje es parte de todo lo que nos forma y moldea como personas. Lo aprendido en la escuela nos acompañará toda la vida. UntrefSchool es eso, preparar a las infancias con un excelente nivel académico pero también preparar seres humanos para el mundo real, sin dejar el lado todo lo que nos define como personas. No somos nuevos en esto, pero nos actualizamos constantemente en nuestros programas de estudio, incorporando nuevas tecnologías, para preparar a los jóvenes del mañana, así como también nuestro equipo docente y directivo recibe capacitaciones constantes para hacer cada día mejor el paso de los niños por nuestro establecimiento <br> Te invitamos a participar de nuestras charlas informativas para que nos puedas conocer! Llenando el formulario de contacto podemos tener tu contacto para informarte sobre las visitas a la escuela y todas las actividades de UntrefSchool.</p>
+             </div>
+              </section>
+            <section id="PorQueElegirnos">
+            <div class="contenedor">
             <h1>Por qué elegirnos </h1>
+            <img id="ImagenPorQueElegirnos" height="200" img width="250" src ="Imagenes/PorQueElegirnos.jpg" class="img-thumbnail" alt="Niño en la huerta">
             <p>Para quienes estamos en el ámbito educativo, no hay nada más reconfortante que ver la expresión de alegría en nuestros alumnos cuando consiguen resolver consignas, cuando se van autosuperando y también, por qué no, cuando están jugando en el recreo. Creamos un ambiente propicio para ello, nuesta escuela cuenta con un extenso parque para disfrutar donde también desarrollamos actividades de contenido educativo, como por ejemplo, nuestro taller de huerta y pintura al aire libre.  Cada año los infantes se preparan para nuevas aventuras, nuestros campamentos dentro y fuera de la escuela son de las preferidas por nuestros alumnos. También extracurricularmente contamos con diversos talleres que aseguramos formarán a estos jóvenes del mañana y serán muy disfrutados: múltiples talleres de deportes, cocina, artesanías y manualidades, música , teatro, etc. Sabemos que ellos son el futuro, por eso incorporamos talleres que acompáñan al avance tecnológico en el que vivimos. Somos la primer escuela del país que incorpora el taller de Programación adaptada para niños, para que ya desde temprano adquieran un conocimiento y razonamiento que les va a servir mucho ¡y qué mejor forma de hacerlo que en la infancia!, donde tenemos muchísima facilidad para aprender lo nuevo.
               Pero no todo es aprender para ser "productivos", contamos con un gran plantel de psicopedagogos que siempre están al tanto de las problemáticas infantiles y  están dispuestos a ayudar de manera individual o grupal en el caso de que sea necesario . Tenemos una política totalmente antibullyng, para ello nos formamos constantemente y se realizan actividades con los niños para tratar el tema. 
               UntrefSchool va mucho más allá de los libros,vamos a aprender a sumar, a leer, a usar nuevas tecnologías pero también a ser grandes personas, a respetar al otro, a querer a la naturaleza y a poder conectarnos con lo que nos hace felices en una etapa tan bella como es la infancia.</p>
              </div>
-            <img class="ImagenPorQueElegirnos" height="340" img width="500" src="Imagenes/PorQueElegirnos.jpg" class="img-thumbnail" alt="Niño en la huerta">
-          </div>
+              </section>
+
          <section id="PropuestaEducativa">
           <h1>Propuesta Educativa</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -60,7 +136,7 @@
               <div class="card">
                 <img src="Imagenes/NuestraEscuela.jpg" class="card-img-top" alt="Niños saltando en el parque">
                 <div class="card-body">
-                  <h5 class="card-title">Entorno Ideal</h5>
+                  <h5 style="color:#EFF5F5;" class="card-title">Entorno Ideal</h5>
                   <p class="card-text">Son muchas las horas que pasamos en la escuela y creemos firmemente que es importante el entorno en el que nos encontramos. Cuidamos de cada detalle, instalaciones modernas y un 
                     extenso parque para disfrutar los días de sol con juegos de plaza, huerta, pista de atletistismo y canchas de deportes. Nuestro edificio garantiza la accesibilidad para todos los alumnos y cuenta con todas las medidas de seguridad. Además de nuestras maravillosas aulas tenemos sectores especiales para el desarrollo de actividades: sala de deportes,
                     auditorio con escenario, sala de música con variedad de instrumentos, laboratorio para experimentos, sala de arte vidriada con vista al parque y patio de juegos.
@@ -72,104 +148,60 @@
               <div class="card">
                 <img src="Imagenes/Actividades.jpg" class="card-img-top" alt="Niño pintando una pieza de cerámica">
                 <div class="card-body">
-                  <h5 class="card-title">Actividades</h5>
-                  <p class="card-text">Además de las actividades curriculares correspondientes a cada ciclo, contamos con numerosos talleres para realizar en nuestro espacio.
-                    Profes de arte, música, gimnasia,jardinería,idiomas,informática y psicopedagogos trabajaron en conjunto para armar esta grilla con propuestas para todos los gustos. 
-                    Contamos con la infraestructura necesaria para llevar a cabo los talleres.
+                  <h5 style="color:#EFF5F5;" class="card-title">Actividades</h5>
+                  <p class="card-text">Además de las actividades curriculares correspondientes a cada ciclo, contamos con numerosos talleres para realizar en nuestro espacio. Profes de arte, música, gimnasia,jardinería,idiomas,informática y psicopedagogos trabajaron en conjunto para armar esta grilla con propuestas para todos los gustos. 
+                    Contamos con la infraestructura necesaria para llevar a cabo los talleres. 
                     Cada año incorporamos novedades al respcto, este año tenemos el agrado ser tener algo único: sumar el concepto de programación adaptada para niños en nuestras clases de informática.
-                    Actividades didácticas, donde los niños se sientan participes, que puedan crear, moldear y divertirse. Sin dudas es un beneficio que disfrutan mucho y se pueden conectar con aquellas cosas que les gustan hacer, sumado a los momentos recreativos y de estudio.
+                    Actividades didácticas, donde los niños se sientan participes, que puedan crear, moldear y divertirse. Sin dudas es un beneficio que disfrutan mucho y se pueden conectar con aquellas cosas que les gustan hacer además de las actividades académicas</p>
                     </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img height="562" width="300" src="Imagenes/EquipoDocente.jpg" class="card-img-top" alt="Maestras con alumnos en una mesa para niños pintando">
+                <img src="Imagenes/maestra-alto-angulo-jugando-sus-alumnos.jpg" class="card-img-top" alt="Maestras con alumnos en una mesa para niños pintando">
                 <div class="card-body">
-                  <h5 class="card-title">Equipo Docente</h5>
+                  <h5 style="color:#EFF5F5;" class="card-title">Equipo Docente</h5>
                   <p class="card-text">
                     Tenemos un equipo sólido de docentes, directivos y psicopedagogos que trabajamos en conjunto y en constante capacitación.
                     Además del tiempo compartido con los niños dedicamos gran tiempo a reuniones en pos de mejoras de las condiciones, abordar problemáticas actuales y organizar actividades. Para ello también recurrimos a especialistas de cada área externos a la escuela. Debemos estar actualizados sobre el contexto en el que estamos sumergidos, conocer nuevas tecnologías, y saber responder ante distintas situaciones que podemos encontrar con personas que están en una etapa tan importante de formación y crecimiento. Amamos lo que hacemos y eso se nota en cualquier ámbito, la calidad humana es uno de nuestros lemas. Siempre estamos orientados a ser mejores en lo que hacemos, en todos los aspectos </p>
                 </div>
               </div>
             </div>
-           
-          </section>
-          <section id="UltimasNoticias">
-            <div id="TituloNoticias"><h1>Últimas noticias</h1> </div>
-            <article>
-            <h2>UntrefSchool la primera escuela del país donde se incorpora el taller de Programación para niños.</h2>
-            <h5>La escuela UntrefSchool es la primer escuela de Argentina que desde este año trae algo muy novedoso en agrenda: un taller de programación para niños, Roberto Pizzani, desarrollador Web y docente a cargo del proyecto nos cuenta de qué se trata</h5>
-          
-     
-</section>
+            </section>
 
-<div id="ContenedorNoti">
-<img class="ImagenNoticias" img width="320" img height="300" src="Imagenes/ImagenNoticias.jpg" class="figure-img img-fluid rounded" alt="Foto del profesor de informática">
-<p>Si hay algo que comparto con mis colegas docentes de UntrefSchool es que nos gusta estar siempre actualizados. Los chicos de hoy no son los mismos que los chicos de hace 20 años, tienen otra forma de aprender, de expersarse. Parece que nacen con un conocimiento tecnológico que a nosotros los de otra época nos costó años adquirir. Lejos de tener una postura crítica al respecto se nos ocurrió aprovechar sus condiciones actuales para que aprendan también contenidos acordes a todo lo que viven a su alrededor.El lenguaje de programación es casi como aprender un nuevo idioma, que se basa en lógicas que antes no conocíamos, no sólo es un lenguaje, sino que es una forma distinta de pensar los procesos, una vez que se adquiere esa capacidad,nos es mucho más fácil esa "conversación" con nuestros dispositivos, aprender a programar de alguna forma es aprender a "hablar" con nuestra computadora o dispositivo que fuere,  para que realice las cosas que deseamos ver en pantalla y otras funcionalidades. Se sabe que la infancia es un momento ideal para adquirir conocimientos, los niños que aprenden un idioma de chicos, por ejemplo, suelen hacerlo con mucha más facilidad que aquel que aprende de grande. Este razonamiento me llevó a pensar, por qué no enseñar a los chicos a tener una noción de programación?. Junto a los directivos de la escuela, psicopedagogos y especialistas en el tema armamos un taller con contenido muy didático para que tengan sus primeros pasos en el mundo de la Programación. Para este taller hicimos algunas pruebas con alumnos dentro de las clases de informática y la respuesta fue sorprendente, no sólo se mostraron muy interesados en aprender sino que realmente han hecho un excelente trabajo. Vamos por más!</p>
-</div>
+              <div id="UltimasNoticias">
+              <h1>Últimas noticias</h1>
+              <h5>UntrefSchool la primera escuela del país donde se incorpora el taller de Programación para niños.</h6>
+              <h6>La escuela UntrefSchool es la primer escuela de Argentina que desde este año trae algo muy novedoso en agrenda: un taller de programación para niños, Roberto Pizzani, desarrollador Web y docente a cargo del proyecto nos cuenta de qué se trata.</h2>
+                <img id="ImagenNoticias" height="130" img width="180" src ="Imagenes/ImagenNoticias.jpg" class="img-thumbnail" alt="Fotografía del profesor entrevistado">
+                <p>Si hay algo que comparto con mis colegas docentes de UntrefSchool es que nos gusta estar siempre actualizados. Los chicos de hoy no son los mismos que los chicos de hace 20 años, tienen otra forma de aprender, de expersarse, parece que nacen con un conocimiento tecnológico que a nosotros los de otra época nos costó años adquirir. Lejos de tener una postura crítica al respecto se nos ocurrió aprovechar sus condiciones actuales para que aprendan también contenidos acordes a todo lo que viven a su alrededor </p>
+             <p> El lenguaje de programación es casi como aprender un nuevo idioma, que se basa en lógicas que antes no conocíamos, no sólo es un lenguaje, sino que es una forma distinta de pensar los procesos, una vez que se adquiere esa capacidad,nos es mucho más fácil esa "conversación" con nuestros dispositivos, aprender a programar de alguna forma es aprender a "hablar" con nuestra computadora o dispositivo que fuere,  para que realice las cosas que deseamos ver en pantalla y otras funcionalidades.
+              Se sabe que la infancia es un momento ideal para adquirir conocimientos, los niños que aprenden un idioma de chicos, por ejemplo, suelen hacerlo con mucha más facilidad que aquel que aprende de grande. Este razonamiento me llevó a pensar, por qué no enseñar a los chicos a tener una noción de programación?. Junto a los directivos de la escuela, psicopedagogos y especialistas en el tema armamos un taller con contenido muy didático para que tengan sus primeros pasos en el mundo de la Programación. Para este taller hicimos algunas pruebas con alumnos dentro de las clases de informática y la respuesta fue sorprendente, no sólo se mostraron muy interesados en aprender sino que realmente han hecho un excelente trabajo. Vamos por más!</p>
+              </div>
 
-<footer>
-  
-  <div class="container text-center">
-    <div class="row align-items-start">
-      <div class="col">
-        <h2> Redes </h2>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-twitter"></a>
-      </div>
-      <div class="col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105086.89093312966!2d-58.708532256640645!3d-34.60503789999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1689982426569!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      </div>
-      <div class="col">
-        <h2> Contactanos </h2>
-        <p> Teléfono: 11.4587.2547 </p>
-        <p> Mail: untrefschool@edu.com.ar </p>
-      </div>
-    </div>
-  </div>
-</footer>
-<div class="grupo-2">
-  <small>© , 2023- Todos los derechos reservados-</small>
-</div>
-
-</body>
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    </body>
-</html>
+           <footer class="footer">
+              <div class="container text-center">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <h2> Redes </h2>
+                    <a href="https://www.facebook.com/untref/?locale=es_LA" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/untref/?hl=es" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/UNTREF" class="fa fa-twitter"></a>
+                  </div>
+                  <div class="col">
+                    <h2>La Escuela</h2>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26271.604757155008!2d-58.58142324077318!3d-34.605410795736184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses-419!2sar!4v1690507056648!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col">
+                    <h2> Contactanos </h2>
+                    <p> Teléfono: 11.4587.2547 </p>
+                    <p> Mail: untrefschool@edu.com.ar </p>
+                  </div>
+                  <small>© Laura Passarello , 2023- Todos los derechos reservados-</small>
+                </div>
+           </footer>
+      </main>
+   </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   </html>
